@@ -9,11 +9,11 @@ import { demoThumbnailUrl, demoVideoUrl, demoChannelTitle, demoChannelUrl, demoV
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
   //console.log(videoId,snippet);
   return (
-    <Card sx={{ width: {md:"320px" , xs:'100px'}, boxShadow:'none' , borderRadius:'none'}}>
+    <Card sx={{ width: { xs: '100%', md: "320px" }, boxShadow: 'none', borderRadius: 'none' }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: 350, height: 180 }}
+          sx={{ width: { xs: "100%", sm: '358px', md: '320px' }, height: 180 }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }}>
@@ -25,7 +25,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
         <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
           <Typography variant='subtitle2' fontWeight="bold" color="gray">
             {snippet?.channelTitle || demoChannelTitle}
-            <CheckCircle sx={{fontSize: 12 , color: 'gray' , ml: '5px'}} />
+            <CheckCircle sx={{ fontSize: 12, color: 'gray', ml: '5px' }} />
           </Typography>
         </Link>
       </CardContent>
