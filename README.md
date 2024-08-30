@@ -9,5 +9,5 @@ This project is written using YouTube videos API and the videos are dynamically 
 ## Languages ​​used
 
 This project is written using:
-### mui material and
+### mui material 
 ### react js.
