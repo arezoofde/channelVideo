@@ -1,6 +1,6 @@
 # Getting Started with channel video youtube
 
-This project was bootstrapped with [channel video youtube](https://channel-youtube.netlify.app/)).
+This project was bootstrapped with [channel video youtube](https://youtubecannel.netlify.app).
 
 ## About Project
 
