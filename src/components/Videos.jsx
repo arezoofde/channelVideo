@@ -3,7 +3,7 @@ import React from 'react';
 import { VideoCard, ChannelCard } from './';
 
 const Videos = ({ videos, direction }) => {
-  if (!videos?.lenght) return 'Loading...';
+  if (!videos?.lenght) return <div style={{color:'#fff'}}>Loading...</div>;
   return (
     <Stack direction={direction || "row"} spacing={2} flexWrap="wrap">
       {videos.map((item, index) => (

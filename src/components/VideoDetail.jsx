@@ -23,7 +23,7 @@ const VideoDetail = () => {
   }, [id]);
 
 
-  if (!VideoDetail) return <div>Loading...</div>
+  if (!VideoDetail) return <div style={{color:'#fff'}}>Loading...</div>;
 
   const { snippet: { title, channelId, channelTitle }, statistics: {
     viewCount, likeCount } } = VideoDetail;

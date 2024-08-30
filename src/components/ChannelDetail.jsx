@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
-import { Videos, ChannelDetail as ChannelDetailComponent, ChannelCard } from './';  // Alias the import
+import { Videos, ChannelDetail as ChannelDetailComponent } from './';  // Alias the import
 import { fetchFromAPI } from "../utils/fechFromApi";
 
 const ChannelDetail = () => {  // Keep the component name
